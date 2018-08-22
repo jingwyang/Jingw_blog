@@ -1,0 +1,8 @@
+---
+title: 2018.07.16
+author: JingwYang
+date: '2018-07-16'
+slug: My first post
+---
+
+![](/post/2018-07-16_files/WechatIMG131.jpeg){width=50% height=50%}
