@@ -1,5 +1,5 @@
 ---
-title: 大宝与小可爱
+title: 傻大宝与小可爱
 author: Jingwen Yang
 date: '2018-08-22'
 slug: ''
