@@ -252,11 +252,11 @@ code {
   }
 
   .nav-logo {
-    margin-top: -13px;
+    margin-top: -23px;
   }
 
   .nav-logo img {
-    max-height: 50px;
+    max-height: 120px;
   }
 
   .nav-links {
@@ -264,7 +264,7 @@ code {
   }
 
   .nav-links li {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 200px;
   }
 
   .content {
