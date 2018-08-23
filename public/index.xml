@@ -6,10 +6,19 @@
     <description>Recent content on My Awesome Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于···</title>
+      <link>/about-me/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/about-me/</guid>
+      <description>我是谁 &amp;emsp;&amp;emsp;古灵精怪小可爱一枚 🌸。 &amp;emsp;&amp;emsp;我现在在魔都东南某高校江湾大草原搬砖 💻。关于我的属性，可以概括但</description>
+    </item>
     
     <item>
       <title>傻大宝与小可爱</title>
