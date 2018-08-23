@@ -78,7 +78,7 @@ code {
 }
 
 .nav-links li:first-child {
-  margin-left: 0;
+  margin-left: 100px;
 }
 
 .nav-links a {
@@ -252,7 +252,7 @@ code {
   }
 
   .nav-logo {
-    margin-top: -23px;
+    margin-top: -15px;
   }
 
   .nav-logo img {
@@ -260,11 +260,11 @@ code {
   }
 
   .nav-links {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .nav-links li {
-    margin: 0 0 0 200px;
+    margin: 0 0 0 300px;
   }
 
   .content {
