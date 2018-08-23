@@ -38,7 +38,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     author = "Jingwen Yang"
     dataFormat = "2006/01/02"
     [params.logo]
-    url = "logo.png"
+    url = "logo.jpeg"
     width = 200
     height = 200
     alt = "Logo"
