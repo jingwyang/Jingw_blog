@@ -6,6 +6,8 @@ slug: ''
 categories: []
 tags: []
 ---
+
+我超级爱我的傻大宝
 $$x-y$$
 $\sqrt{x^2+\sqrt{y}}$
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$ 
