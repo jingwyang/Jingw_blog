@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on My Awesome Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>对基因表达保守性强度进行经验贝叶斯估计的理论模型</title>
+      <link>/2018/10/11/w/</link>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/10/11/w/</guid>
+      <description>转录组进化的稳定化选择压模型 在基因表达进化的过程中，OU模型认为，基因表达的变化会受到一个稳定的选择压力。这种模型相较于认为基因表达变化是一</description>
+    </item>
     
     <item>
       <title>跑步时的内心戏</title>
@@ -53,7 +62,7 @@
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/08/22/%E5%82%BB%E5%A4%A7%E5%AE%9D%E4%B8%8E%E5%B0%8F%E5%8F%AF%E7%88%B1/</guid>
-      <description>我超级爱我的傻大宝 2018.09.02 我觉得我不漂亮了，黑瘦黑瘦的，皮肤也不好。 \[x-y\] \(\sqrt{x^2+\sqrt{y}}\) \[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\] (1) \(a_1\) 背景色是：orange &amp;lt;font face=“仿宋”, color=red, size=7&amp;gt;我</description>
+      <description>我超级爱我的傻大宝 2018.09.02 我觉得我不漂亮了，黑瘦黑瘦的，皮肤也不好。 \(\sigma^2\) \[x-y\] \(\sqrt{x^2+\sqrt{y}}\) \[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\] (1) \(a_1\) 背景色是：orange &amp;lt;font face=“仿宋”, color=red, size=7&amp;gt;</description>
     </item>
     
     <item>
@@ -156,12 +165,12 @@
     </item>
     
     <item>
-      <title>写在支教结束</title>
+      <title>2018.07.30 写在支教结束</title>
       <link>/2018/07/30/2018-07-30/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/07/30/2018-07-30/</guid>
-      <description>&amp;emsp;&amp;emsp;我一直愿意保持一颗感恩的心。 &amp;emsp;&amp;emsp;我很感恩学校给了我这样一个机会，让我去做一件特别值得做的事情。 &amp;</description>
+      <description>我一直愿意保持一颗感恩的心 我很感恩学校给了我这样一个机会，让我去做一件特别值得做的事情。 也很感恩青少年活动中心的支持，每天美味的三餐以及与3</description>
     </item>
     
     <item>

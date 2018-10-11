@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.40.2" />
+
+
+<title>对基因表达保守性强度进行经验贝叶斯估计的理论模型 - My Awesome Site</title>
+<meta property="og:title" content="对基因表达保守性强度进行经验贝叶斯估计的理论模型 - My Awesome Site">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo1.jpeg"
+         width="200"
+         height="200"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/">首页</a></li>
+    
+    <li><a href="/blog/">博客</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="/about-me/">关于</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">对基因表达保守性强度进行经验贝叶斯估计的理论模型</h1>
+
+    
+
+    <div class="article-content">
+      <div class="section level1">
+<h1>转录组进化的稳定化选择压模型</h1>
+<p>  在基因表达进化的过程中，OU模型认为，基因表达的变化会受到一个稳定的选择压力。这种模型相较于认为基因表达变化是一个随机过程的布朗运动模型而言更加符合基因表达变化的实际情况。</p>
+<p>  OU模型有两个特点。</p>
+<ol style="list-style-type: decimal">
+<li><p>给定基因的表达水平<span class="math inline">\(x\)</span>存在一个最适合值<span class="math inline">\(\mu\)</span>。当其表达值<span class="math inline">\(x\)</span>等于或在最适值<span class="math inline">\(\mu\)</span>附近时，该基因的适合度是最高的。而相对于基因表达而言，DNA序列水平的突变是一个随机的过程。突变的产生会使基因的表达发生改变，进而很大程度上偏离其表达最适值。
+也就是说，基因表达的变化受到序列突变（方差为<span class="math inline">\(\sigma^2\)</span>)的驱动，其适应度遵循一个高斯正态过程，其形式为
+<span class="math display">\[f\left(x\right)=e^{-\frac{\omega\left(x-\mu\right)^2}{2}}\]</span>
+其中<span class="math inline">\(\mu\)</span>为基因<span class="math inline">\(x\)</span>的表达最适值，<span class="math inline">\(\omega\)</span>为作用于<span class="math inline">\(x\)</span>的稳定选择压系数。当<span class="math inline">\(x=\mu\)</span>时，其适应度<span class="math inline">\(f\left(x\right)\)</span>达到最大值；<span class="math inline">\(x\)</span>偏离<span class="math inline">\(\mu\)</span>的程度越大，其适应度<span class="math inline">\(f(x)\)</span>越小。稳定选择压系数<span class="math inline">\(\omega\)</span>的大小反映了当<span class="math inline">\(x\)</span>变化时，其适应度<span class="math inline">\(f(x)\)</span>变化的快慢。当<span class="math inline">\(x\)</span>受到的选择压系数<span class="math inline">\(\omega\)</span>越大时，其适应度<span class="math inline">\(f(x)\)</span>下降越快，反之，其适应度<span class="math inline">\(f(x)\)</span>变化越慢。</p></li>
+<li><p>基因表达水平<span class="math inline">\(x\)</span>偏离最适值<span class="math inline">\(\mu\)</span>后，回复到最适值<span class="math inline">\(\mu\)</span>的过程受到正选择作用的影响；这种“回复作用力”的强度与该基因所收到的稳定化选择压强度<span class="math inline">\(\omega\)</span>线性相关。</p></li>
+</ol>
+<p>  给定基因表达初始值<span class="math inline">\(x_0\)</span>， 经历<span class="math inline">\(t\)</span>单位的进化时间后，OU模型预测<span class="math inline">\(x(t)\)</span>的表达值遵循一个正态分布，其均值<span class="math inline">\(E[x|x_0]\)</span>和方差<span class="math inline">\(V[x|x_0]\)</span>分别表示为
+<span class="math display">\[E\left[x|x_0\right]=\mu\left(1-e^{-\beta t}\right)+x_0e^{-\beta t}\]</span></p>
+<p><span class="math display">\[V\left[x|x_0\right]=1-\frac{e^{-2\beta t}}{W}\]</span>
+其中<span class="math inline">\(\beta=W\sigma^2\)</span>表示表达的进化速度，<span class="math inline">\(W\)</span>表示基因表达所受到的保守性强度，上述公式可简写为<span class="math inline">\(OU\left(x\left|x_0;\  \theta\right|\right)\)</span>,其中<span class="math inline">\(\theta=(\mu, \beta t, W)\)</span>是参数向量。</p>
+<p>  保守性强度(<span class="math inline">\(W\)</span>)对于反映基因表达所受到的稳定选择压强度<span class="math inline">\(\omega\)</span>及其在进化过程中发生的变化(序列突变对表达水平产生的影响，方差为<span class="math inline">\(V_0\)</span>)起到十分重要的作用。本文的主要目的是构建估计基因表达在多物种进化过程中所受到的保守性强度(<span class="math inline">\(W\)</span>)的统计方法，此处我们主要用RNA-seq数据中的RPKM作为基因表达的主要度量方式。在物种的系统发生关系中，<span class="math inline">\(W\)</span>的生物学含义表示为
+<span class="math display">\[W=\frac{4Ne \omega}{1-e^{-4Ne\omega V_0}}\]</span>
+其中<span class="math inline">\(Ne\)</span>代表有效群体大小，<span class="math inline">\(V_0\)</span>表示序列突变对表达水平产生的影响的方差。当选择压系数趋近于无穷时，<span class="math inline">\(W\approx4Ne\omega\)</span>；当选择压系数<span class="math inline">\(\omega\approx0\)</span>时，<span class="math inline">\(W\approx1/V_0\)</span>。</p>
+</div>
+<div id="ou" class="section level1">
+<h1>物种系统发生关系中的静态OU模型</h1>
+<p>  图一表示特定组织的比较转录组分析的进化关系，其包含两个过程。</p>
+<ol style="list-style-type: decimal">
+<li>从组织起源结点<span class="math inline">\(Z\)</span>到该组织物种分化结点<span class="math inline">\(O\)</span>的进化谱系关系，该过程经历了<span class="math inline">\(\tau\)</span>个进化时间单位。给定结点<span class="math inline">\(Z\)</span>处的初始表达水平<span class="math inline">\(z_0\)</span>，基因的表达水平从结点<span class="math inline">\(Z\)</span>处的<span class="math inline">\(z_0\)</span>到结点<span class="math inline">\(O\)</span>处的<span class="math inline">\(x_o\)</span>的过程可用OU过程表示为<span class="math inline">\(OU(x_o|z_0;\theta)\)</span>，<span class="math inline">\(\theta\)</span>表示参数向量<span class="math inline">\(\theta=(\mu, \beta \tau, W)\)</span>。</li>
+<li>从该组织的物种分化结点<span class="math inline">\(O\)</span>到当前<span class="math inline">\(n\)</span>个物种的进化谱系关系，该过程经历了<span class="math inline">\(t\)</span>个进化时间单位。当前<span class="math inline">\(n\)</span>个物种的基因表达水平表示为<span class="math inline">\(\boldsymbol{x}=(x_1,\cdots,x_n)\)</span>。在给定结点<span class="math inline">\(O\)</span>的表达水平<span class="math inline">\(x_o\)</span>的条件下，当前<span class="math inline">\(n\)</span>个物种表达水平的联合概率密度可用<span class="math inline">\(P(\boldsymbol{x}|x_o)\)</span>表示，并可用OU过程推导。<span class="math inline">\(P(\boldsymbol{x}|z_0)\)</span>表示在给定组织起源结点结点<span class="math inline">\(Z\)</span>的表达水平<span class="math inline">\(z_0\)</span>的条件下，当前<span class="math inline">\(n\)</span>个物种表达水平的联合概率密度，其可表示为
+<span class="math display">\[P(\boldsymbol{x}|z_0)=\int_{-\infty}^{\infty}OU\left(x_o|z_0;\tau\right)P\left(\boldsymbol{x}|x_o\right)dx_o\]</span></li>
+</ol>
+<div align="center">
+<div class="figure">
+<img src="/blog/2018-10-11-W的经验贝叶斯估计_files/Figure1.jpg" alt="图一 比较转录组分析的进化关系图" style="width:70.0%;height:70.0%" />
+<p class="caption">图一 比较转录组分析的进化关系图</p>
+</div>
+</div>
+<p>  Hansen and Martins指出<span class="math inline">\(P(\boldsymbol{x}|z_0)\)</span>符合一个多元正太分布，其性质可由均值向量<span class="math inline">\(\boldsymbol{\mu}\)</span> 和方差-协方差矩阵<span class="math inline">\(\boldsymbol{V}\)</span>决定。但是当前物种的转录组信息包含太少的从结点<span class="math inline">\(Z\)</span>到结点<span class="math inline">\(O\)</span>的基因表达变化信息，这使得方差-协方差矩阵<span class="math inline">\(\boldsymbol{V}\)</span>变得异常复杂。此外，一般的OU过程允许基因在不同物种中具有不同的基因表达变化速度<span class="math inline">\(\beta\)</span>与表达保守性强度<span class="math inline">\(W\)</span>，在实际的分析过程中往往会出现过度参数化现象，导致统计自由度不足，给计算带来困难。</p>
+<p>  为了解决这些技术上的问题，我们提出了静态OU(sOU)模型的概念。我们假定，特定组织的转录组整体的生物学功能在物种进化过程中是保守的。sOU模型主要包含两个方面的假设：</p>
+<ol style="list-style-type: decimal">
+<li>图一中特定组织的起源结点<span class="math inline">\(Z\)</span>发生在相当古老的时间之前，结点<span class="math inline">\(Z\)</span>到该组织产生物种分化的结点<span class="math inline">\(O\)</span>的进化时间<span class="math inline">\(\tau\)</span>可近似认为<span class="math inline">\(\tau\approx+\infty\)</span>。根据OU模型，我们可以得到结点<span class="math inline">\(O\)</span>的表达均值等于其最适值<span class="math inline">\(\mu\)</span>,方差<span class="math inline">\(\rho^2=1/W\)</span>。</li>
+<li>基因表达水平在结点<span class="math inline">\(O\)</span>处已达到稳定状态。结点<span class="math inline">\(O\)</span>到当前物种的进化时间<span class="math inline">\(t\)</span>相较于<span class="math inline">\(\tau\)</span>是一个较短的进化过程。在这个过程中，基因表达的最适值<span class="math inline">\(\mu\)</span>与保守性强度<span class="math inline">\(W\)</span>保持不变。也就是说，基因表达的均值与方差在所有内部结点和外部结点中分别等于其表达最适值<span class="math inline">\(\mu\)</span>和<span class="math inline">\(1/W\)</span>。</li>
+</ol>
+<p>  在sOU模型下，<span class="math inline">\(P(\boldsymbol{x}|z_0)\)</span>可作以下简化：</p>
+<ol style="list-style-type: decimal">
+<li>因为进化时间<span class="math inline">\(\tau\)</span>接近<span class="math inline">\(+\infty\)</span>，当前物种的表达水平<span class="math inline">\(\boldsymbol{x}\)</span>几乎不受<span class="math inline">\(z_0\)</span>的影响，因此可认定<span class="math inline">\(z_0\)</span>与当前物种的表达水平<span class="math inline">\(\boldsymbol{x}\)</span>相互独立，即<span class="math inline">\(P(\boldsymbol{x}|z_0) \approx P(\boldsymbol{x})\)</span></li>
+<li><span class="math inline">\(P(\boldsymbol{x}|z_0)\)</span>的均值向量<span class="math inline">\(\boldsymbol{\mu}\)</span>为一个统一的值。</li>
+<li>基于前文的假设，不同物种基因表达变化的方差<span class="math inline">\(\rho^2=1/W\)</span>。<span class="math inline">\(P(\boldsymbol{x}|z_0)\)</span>的方差-协方差矩阵表示为<span class="math inline">\(\boldsymbol{V}=\boldsymbol{R}/W\)</span>，<span class="math inline">\(\boldsymbol{R}\)</span>为当前物种基因表达的相关系数矩阵。</li>
+</ol>
+<p>  由于我们的主要目的是想计算不同基因的表达保守性强度<span class="math inline">\(W\)</span>，所以<span class="math inline">\(x\)</span>的联合概率密度函数可表示为<span class="math inline">\(P(\boldsymbol{x};\mu,\boldsymbol{R}, W)\)</span></p>
+</div>
+<div id="w" class="section level1">
+<h1>不同基因的<span class="math inline">\(W\)</span>变化</h1>
+<p>  Gama分布的概率密度函数可表示为
+<span class="math display">\[f\left(x,\beta,\alpha\right)=\frac{\beta^{\alpha}}{\Gamma\left(\alpha\right)}x^{\alpha-1}e^{-\beta x}\]</span>
+其中，Gamma分布中的参数<span class="math inline">\(\alpha\)</span>称为形状参数(shape parameter)，<span class="math inline">\(\beta\)</span>称为尺度参数(scale parameter)。Gamma分布的均值<span class="math inline">\(E[x]=\beta/\alpha\)</span>，方差<span class="math inline">\(V[x]=\beta/\alpha^2\)</span>。</p>
+<p>  sOU模型假定特定基因的保守性强度<span class="math inline">\(W\)</span>在不同物种中为一固定的常数，而<span class="math inline">\(W\)</span>在不同基因中均有不同。
+在这里，我们引用Gamma分布的概，假定不同基因的保守性强度<span class="math inline">\(W\)</span>作为一个随机变量服从Gamma分布，表示为：</p>
+<p><span class="math display">\[\phi\left(W;\alpha,\overline{W}\right)=\frac{(\alpha/\overline{W})^\alpha}{\Gamma\left(\alpha\right)}W^{\alpha-1}e^{-\alpha W/\overline{W}}\]</span>
+其中为Gamma分布的均值，<span class="math inline">\(\alpha\)</span>为形状参数(shape parameter)，<span class="math inline">\(\alpha/\overline{W}\)</span>为尺度参数(scale parameter)。
+当<span class="math inline">\(\alpha\)</span>值很小时，<span class="math inline">\(W\)</span>的变异度很高；当<span class="math inline">\(\alpha\rightarrow\infty\)</span>时，<span class="math inline">\(W\)</span>为一常数。</p>
+<p>  <span class="math inline">\(\boldsymbol{x}=(x_1,\cdots,x_n)\)</span>表示当前物种的基因表达水平，在OU模型下，<span class="math inline">\(\boldsymbol{x}\)</span>的联合概率密度<span class="math inline">\(P(\boldsymbol{x;\mu,V})\)</span>服从多元正太分布，可表示为
+<span class="math display">\[P\left(\boldsymbol{x,\mu,V}\right)=\frac{1}{\left(\sqrt{2\pi}\right)^n\left|\boldsymbol{V}\right|^{\frac{1}{2}}}\exp\left\{-\frac{\left(\boldsymbol{x}-\boldsymbol{\mu}\right)&#39;\boldsymbol{V}^{\left\{-1\right\}}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)}{2}\right\}\]</span>
+其中，<span class="math inline">\(\boldsymbol{\mu}\)</span>为均值向量，<span class="math inline">\(\boldsymbol{V}\)</span>为方差-协方差矩阵。在sOU模型下，方差-协方差矩阵<span class="math inline">\(\boldsymbol{V}=\boldsymbol{R}/W\)</span>。将<span class="math inline">\(W\)</span>作为一个随机变量，我们可以将<span class="math inline">\(\boldsymbol{x}\)</span>的联合概率密度<span class="math inline">\(P(\boldsymbol{x};\boldsymbol{\mu},\boldsymbol{R},W)\)</span>改写为<span class="math inline">\(P(\boldsymbol{x}|W;\boldsymbol{\mu,R})\)</span></p>
+<p><span class="math display">\[
+\begin{align*} 
+P\left(\boldsymbol{x}|W;\boldsymbol{\mu,R}\right)&amp;=\frac{W^{\frac{n}{2}}}{\left(\sqrt{\pi}\right)^n\left|R\right|^{\frac{1}{2}}}\exp\left\{-W\left(\boldsymbol{x}-\boldsymbol{\mu}\right)&#39;\boldsymbol{R}^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\}\\
+&amp;=A\exp\left\{-Q\left(x\right)W\right\}W^{\frac{n}{2}}
+\end{align*} 
+\]</span>
+其中<span class="math inline">\(Q(\boldsymbol{x})=(\boldsymbol{x}-\boldsymbol{\mu})^T\boldsymbol{R}^{-1}(\boldsymbol{x}-\boldsymbol{\mu})\)</span>，表示<span class="math inline">\(\boldsymbol{x}\)</span>的二次方程，<span class="math inline">\(A\)</span>为归一化常数<span class="math inline">\(A=\pi^{-\frac{n}{2}}\left|R\right|^{-\frac{1}{2}}\)</span>。</p>
+<p>  由此可推出<span class="math inline">\(P\left(\boldsymbol{x};\boldsymbol{\mu},\boldsymbol{R},\alpha,\overline{W}\right)\)</span>边缘密度函数
+<span class="math display">\[
+\begin{align*} 
+P\left(\boldsymbol{x};\boldsymbol{\mu},\boldsymbol{R},\alpha,\overline{W}\right)&amp;=\int_0^{\infty}P\left(\boldsymbol{x}|W;\  \boldsymbol{\mu};\boldsymbol{R}\right)\phi\left(W;\  \alpha,\overline{W}\right)dW\\
+&amp;=A\left(\frac{\overline{W}}{\alpha}\right)^{n/2}\left(\frac{\Gamma\left(n/2+\alpha\right)}{\Gamma\left(\alpha\right)}\right)\left(\frac{\alpha}{\alpha+Q\left(\boldsymbol{x}\right)\overline{W}}\right)^{n/2+\alpha}
+\end{align*} 
+\]</span></p>
+</div>
+<div id="w" class="section level1">
+<h1>特定基因保守性强度<span class="math inline">\(W\)</span>的经验贝叶斯估计</h1>
+<div id="w" class="section level3">
+<h3><span class="math inline">\(W\)</span>的后验概率</h3>
+<p>  我们用贝叶斯过程来预测给定基因的表达保守性强度<span class="math inline">\(W\)</span>。根据贝叶斯法则，在基因表达水平<span class="math inline">\(\boldsymbol{x}\)</span>条件下，基因的表达保守性强度<span class="math inline">\(W\)</span>的后验概率可表示为
+<span class="math display">\[
+\begin{align*} 
+P\left(W|\boldsymbol{x};\boldsymbol{\mu},\boldsymbol{R},\alpha,\overline{W}\right)&amp;=\frac{\phi\left(W;\alpha,\overline{W}\right)P\left(\boldsymbol{x}|W;\boldsymbol{\mu},\boldsymbol{R}\right)}{P\left(\boldsymbol{x};\boldsymbol{\mu},\boldsymbol{R},\alpha,\overline{W}\right)}\\
+&amp;=\frac{\left[\frac{\alpha}{\overline{W}}+Q\left(\boldsymbol{x}\right)\right]^{\frac{n}{2}+\alpha}}{\Gamma\left(\frac{n}{2}+\alpha\right)}W^{\frac{n}{2}+\alpha-1}e^{-\left[\frac{\alpha}{\overline{W}}+Q\left(\boldsymbol{x}\right)\right]W}
+\end{align*} 
+\]</span>
+可得<span class="math inline">\(P\left(W|\boldsymbol{x};\boldsymbol{\mu},\boldsymbol{R},\alpha,\overline{W}\right)\)</span>服从Gamma分布，均值与方差可分别表示为
+<span class="math display">\[E\left[W|x\right]\  =\left[\frac{\alpha+\frac{n}{2}}{\alpha+Q\left(x\right)\overline{W}}\right]\overline{W}\]</span>
+<span class="math display">\[Var\left[W|x\right]=\left[\frac{\alpha+\frac{n}{2}}{\left(\alpha+Q\left(x\right)\overline{W}\right)^2}\right]\overline{W}^2\]</span></p>
+</div>
+<div id="ewboldsymbolx" class="section level3">
+<h3>对后验均值<span class="math inline">\(E[W|\boldsymbol{x}]\)</span>的解析</h3>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://weibo.com/u/2267035631" class="footer-links-kudos">Weibo</a>
+          </li>
+          <li>
+            <a href="https://github.com/jingwyang/" class="footer-links-kudos">Github <img src="/images/git-logo.jpg" width="30" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
