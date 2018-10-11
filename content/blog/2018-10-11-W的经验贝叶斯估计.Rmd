@@ -1,5 +1,5 @@
 ---
-title: 对基因表达保守性强度进行经验贝叶斯估计的理论模型
+title: 基因表达保守性强度的经验贝叶斯估计理论模型
 author: Jingwen Yang
 date: '2018-10-11'
 slug: W
