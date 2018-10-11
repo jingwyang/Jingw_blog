@@ -1,11 +1,16 @@
 ---
-title: 基因表达保守性强度的经验贝叶斯估计理论模型
-author: Jingwen Yang
+title: "基因表达保守性强度的经验贝叶斯估计理论模型"
+author: "Jingwen Yang"
 date: '2018-10-11'
+output:
+  html_document: default
+  pdf_document: default
 slug: W
-categories: []
 tags: []
+categories: []
 ---
+------
+
 # 转录组进化的稳定化选择压模型
 
 &emsp;&emsp;在基因表达进化的过程中，OU模型认为，基因表达的变化会受到一个稳定的选择压力。这种模型相较于认为基因表达变化是一个随机过程的布朗运动模型而言更加符合基因表达变化的实际情况。
@@ -31,6 +36,8 @@ $$V\left[x|x_0\right]=1-\frac{e^{-2\beta t}}{W}$$
 $$W=\frac{4Ne \omega}{1-e^{-4Ne\omega V_0}}$$
 其中$Ne$代表有效群体大小，$V_0$表示序列突变对表达水平产生的影响的方差。当选择压系数趋近于无穷时，$W\approx4Ne\omega$；当选择压系数$\omega\approx0$时，$W\approx1/V_0$。
 
+-------
+
 # 物种系统发生关系中的静态OU模型
 
 &emsp;&emsp;图一表示特定组织的比较转录组分析的进化关系，其包含两个过程。
@@ -50,8 +57,6 @@ $$P(\boldsymbol{x}|z_0)=\int_{-\infty}^{\infty}OU\left(x_o|z_0;\tau\right)P\left
 1. 图一中特定组织的起源结点$Z$发生在相当古老的时间之前，结点$Z$到该组织产生物种分化的结点$O$的进化时间$\tau$可近似认为$\tau\approx+\infty$。根据OU模型，我们可以得到结点$O$的表达均值等于其最适值$\mu$,方差$\rho^2=1/W$。
 2. 基因表达水平在结点$O$处已达到稳定状态。结点$O$到当前物种的进化时间$t$相较于$\tau$是一个较短的进化过程。在这个过程中，基因表达的最适值$\mu$与保守性强度$W$保持不变。也就是说，基因表达的均值与方差在所有内部结点和外部结点中分别等于其表达最适值$\mu$和$1/W$。
 
-
-
 &emsp;&emsp;在sOU模型下，$P(\boldsymbol{x}|z_0)$可作以下简化：
 
 1. 因为进化时间$\tau$接近$+\infty$，当前物种的表达水平$\boldsymbol{x}$几乎不受$z_0$的影响，因此可认定$z_0$与当前物种的表达水平$\boldsymbol{x}$相互独立，即$P(\boldsymbol{x}|z_0) \approx P(\boldsymbol{x})$
@@ -59,6 +64,8 @@ $$P(\boldsymbol{x}|z_0)=\int_{-\infty}^{\infty}OU\left(x_o|z_0;\tau\right)P\left
 3. 基于前文的假设，不同物种基因表达变化的方差$\rho^2=1/W$。$P(\boldsymbol{x}|z_0)$的方差-协方差矩阵表示为$\boldsymbol{V}=\boldsymbol{R}/W$，$\boldsymbol{R}$为当前物种基因表达的相关系数矩阵。
 
 &emsp;&emsp;由于我们的主要目的是想计算不同基因的表达保守性强度$W$，所以$x$的联合概率密度函数可表示为$P(\boldsymbol{x};\mu,\boldsymbol{R}, W)$
+
+-------
 
 # 不同基因的$W$变化
 
@@ -93,6 +100,8 @@ P\left(\boldsymbol{x};\boldsymbol{\mu},\boldsymbol{R},\alpha,\overline{W}\right)
 \end{align*} 
 $$
 
+
+-------
 # 特定基因保守性强度$W$的经验贝叶斯估计
 
 ### $W$的后验概率

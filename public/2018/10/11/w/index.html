@@ -62,7 +62,8 @@
     
 
     <div class="article-content">
-      <div class="section level1">
+      <hr />
+<div class="section level1">
 <h1>转录组进化的稳定化选择压模型</h1>
 <p>  在基因表达进化的过程中，OU模型认为，基因表达的变化会受到一个稳定的选择压力。这种模型相较于认为基因表达变化是一个随机过程的布朗运动模型而言更加符合基因表达变化的实际情况。</p>
 <p>  OU模型有两个特点。</p>
@@ -80,6 +81,7 @@
 <p>  保守性强度(<span class="math inline">\(W\)</span>)对于反映基因表达所受到的稳定选择压强度<span class="math inline">\(\omega\)</span>及其在进化过程中发生的变化(序列突变对表达水平产生的影响，方差为<span class="math inline">\(V_0\)</span>)起到十分重要的作用。本文的主要目的是构建估计基因表达在多物种进化过程中所受到的保守性强度(<span class="math inline">\(W\)</span>)的统计方法，此处我们主要用RNA-seq数据中的RPKM作为基因表达的主要度量方式。在物种的系统发生关系中，<span class="math inline">\(W\)</span>的生物学含义表示为
 <span class="math display">\[W=\frac{4Ne \omega}{1-e^{-4Ne\omega V_0}}\]</span>
 其中<span class="math inline">\(Ne\)</span>代表有效群体大小，<span class="math inline">\(V_0\)</span>表示序列突变对表达水平产生的影响的方差。当选择压系数趋近于无穷时，<span class="math inline">\(W\approx4Ne\omega\)</span>；当选择压系数<span class="math inline">\(\omega\approx0\)</span>时，<span class="math inline">\(W\approx1/V_0\)</span>。</p>
+<hr />
 </div>
 <div id="ou" class="section level1">
 <h1>物种系统发生关系中的静态OU模型</h1>
@@ -108,6 +110,7 @@
 <li>基于前文的假设，不同物种基因表达变化的方差<span class="math inline">\(\rho^2=1/W\)</span>。<span class="math inline">\(P(\boldsymbol{x}|z_0)\)</span>的方差-协方差矩阵表示为<span class="math inline">\(\boldsymbol{V}=\boldsymbol{R}/W\)</span>，<span class="math inline">\(\boldsymbol{R}\)</span>为当前物种基因表达的相关系数矩阵。</li>
 </ol>
 <p>  由于我们的主要目的是想计算不同基因的表达保守性强度<span class="math inline">\(W\)</span>，所以<span class="math inline">\(x\)</span>的联合概率密度函数可表示为<span class="math inline">\(P(\boldsymbol{x};\mu,\boldsymbol{R}, W)\)</span></p>
+<hr />
 </div>
 <div id="w" class="section level1">
 <h1>不同基因的<span class="math inline">\(W\)</span>变化</h1>
@@ -136,6 +139,7 @@ P\left(\boldsymbol{x};\boldsymbol{\mu},\boldsymbol{R},\alpha,\overline{W}\right)
 &amp;=A\left(\frac{\overline{W}}{\alpha}\right)^{n/2}\left(\frac{\Gamma\left(n/2+\alpha\right)}{\Gamma\left(\alpha\right)}\right)\left(\frac{\alpha}{\alpha+Q\left(\boldsymbol{x}\right)\overline{W}}\right)^{n/2+\alpha}
 \end{align*} 
 \]</span></p>
+<hr />
 </div>
 <div id="w" class="section level1">
 <h1>特定基因保守性强度<span class="math inline">\(W\)</span>的经验贝叶斯估计</h1>
