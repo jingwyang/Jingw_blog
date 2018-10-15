@@ -64,14 +64,14 @@ categories: []
 - 8个脑区的进化速度的数量级均在$10^{-9}$。
 
 <div align=center>
-![图二 8个脑区表达进化关系](/blog/2018-10-15-transcriptom/fig2.jpg){width=80% height=80%}
+![图二 8个脑区表达进化关系](/blog/2018-10-15-transcriptom/fig2.jpg){width=100% height=100%}
 </div>
 
 <div align=center>
-![表一 8脑区表达进化速度](/blog/2018-10-15-transcriptome/table1.jpg){width=100% height=100%}
+![表一 8脑区表达进化速度](/blog/2018-10-15-transcriptome/table1.jpg){width=120% height=120%}
 </div>
 
-<div align=center>![图三 8脑区表达进化速度](/blog/2018-10-15-transcriptome/fig3.jpg){width=80% height=80%}
+<div align=center>![图三 8脑区表达进化速度](/blog/2018-10-15-transcriptome/fig3.jpg){width=70% height=70%}
 </div>
 
 
