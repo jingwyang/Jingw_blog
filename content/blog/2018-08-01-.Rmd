@@ -2,6 +2,13 @@
 title: 环洱海旅拍
 author: Jingwen Yang
 date: '2018-08-01'
+documentclass: ctexart
+output:
+  rticles::ctex:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+classoption: "hyperref,"
 slug: ''
 categories: []
 tags: []

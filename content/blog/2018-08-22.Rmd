@@ -1,10 +1,11 @@
 ---
-title: 傻大宝与小可爱
-author: Jingwen Yang
+title: "傻大宝与小可爱"
+author: "Jingwen Yang"
 date: '2018-08-22'
+output: pdf_document
 slug: ''
-categories: []
 tags: []
+categories: []
 ---
 
 我超级爱我的傻大宝

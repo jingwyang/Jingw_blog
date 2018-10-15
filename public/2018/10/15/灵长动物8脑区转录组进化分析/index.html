@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.40.2" />
+
+
+<title>灵长动物8脑区转录组进化分析 - My Awesome Site</title>
+<meta property="og:title" content="灵长动物8脑区转录组进化分析 - My Awesome Site">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo1.jpeg"
+         width="200"
+         height="200"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/">首页</a></li>
+    
+    <li><a href="/blog/">博客</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="/about-me/">关于</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+
+    <h1 class="article-title">灵长动物8脑区转录组进化分析</h1>
+
+    
+
+    <div class="article-content">
+      <div class="section level1">
+<h1>材料与方法</h1>
+<div class="section level2">
+<h2>数据介绍</h2>
+<p>  在本文中我们选取了四个灵长动物8个脑区的转录组数据。四个灵长动物分别是human（<em>Homo sapiens</em>）, chimpanzee（<em>Pan troglodytes</em>）, gorilla（<em>Gorilla gorilla</em>）和gibbon（<em>Nomascus leucogenys</em>）。8脑区的分别为DPFC（dorsolateral prefrontal cortex背外侧前额叶皮层）, VPFC（ ventrolateral prefrontal cortex 腹外侧前额叶皮层）， PMC（premotor cortex 前运动皮层）， V1C( primary visual cortex 初级视觉皮层）， ACC（anterior cingulate cortex 前扣带皮层），STR（striatum 纹状体），HIP（hippocampus 海马体），CB（cerebellum小脑）。其中DPFC，VPFC，PMC， V1C，ACC属于neocortical areas（新皮质区域），STR，HIP属于subcortical areas（皮质下区域）。CB是小脑。除去gibbon中的8个组织只有1个生物学重复外，其余物种中的8个组织均有2～6个生物学重复。我们使用RPKM值作为基因的表达水平度量。四个灵长动物中共得到27991个one-to-one orthologous genes。</p>
+</div>
+<div id="house-keeping-gene" class="section level2">
+<h2>看家基因（House keeping gene）数据集</h2>
+<p>  我们选取了文章中所给出的看家基因列表。该数据集给出了一共个3804个human看家基因列表。我们将这3804个基因集与27991个灵长动物one-to-one orthologous genes取交集，共得到3405个灵长动物看家基因。</p>
+</div>
+<div id="nervous-system-development-gene" class="section level2">
+<h2>神经系统发育相关基因（Nervous System development gene)数据集</h2>
+<p>  DAVID数据库中与“Nervous System development”相关的GO Term ID 为GO:0007399，该GO Term包含个子Term，共包含265个基因。我们将这265个基因集与27991个灵长动物one-to-one orthologous genes取交集，共得到240个灵长动物神经系统发育相关基因。</p>
+</div>
+</div>
+<div class="section level1">
+<h1>结果与讨论</h1>
+<div class="section level2">
+<h2>灵长动物不同脑区进化关系</h2>
+<p>  我们分析了4个灵长动物8个脑区的转录组数据，共得到了27991个one-to-one orthologous genes。我们使用sOU距离计算了表达距离矩阵，并以gibbon的CB组织作为外类群，构建了这些组织的表达特征树，表达特征树的拓扑结构具有较高的Bootstrap值支持，如图一所示。表达特征树的所包含的信息可总结如下：</p>
+<ol style="list-style-type: decimal">
+<li>8个脑区中的7个大脑区域在4个灵长动物中分别聚集在一起。而且针对每个物种而言，5个新皮质区域（DPFC，VPFC，PMC， V1C，ACC）倾向聚集在一起，2个皮质下区域（STR，HIP）倾向聚集在一起。</li>
+<li>8个脑区中的小脑作为在形态学上与大脑相对独立的组织展现出了其独有的进化特征。就小脑这个组织而言，四个灵长动物的小脑组织在进化树中与大脑各个区域分开，单独聚在一起。</li>
+</ol>
+<p>  灵长动物8个脑区表达特征树的拓扑结构可反映两部分的内容：</p>
+<ol style="list-style-type: decimal">
+<li>我们所构建的表达特征树与这些脑区的形态学相似度比较一致。在转录组分析中，我们用于计算表达距离的sOU方法可帮助我们探索比较转录组分析的进化关系。</li>
+<li>不同物种不同组织之间的表达距离由两部分构成，分别是进化距离（evolutionary distance）和发育距离（development distance）。当不同物种的不同组织之间的进化距离大于发育距离时，同一物种内的不同组织倾向于聚集在一起；而当进化距离小于发育距离时，不同物种的同一组织倾向于聚集在一起。我们构建的灵长动物不同脑区表达特征树反映出（i）针对大脑和小脑这两个组织而言，大脑与小脑之间的进化距离小于发育距离，所以不同物种的同一组织（大脑或小脑）聚集在一起；（ii）就大脑的7个不同区域而言，其发育距离小于其进化距离，所以同一物种内的7个不同大脑区域聚集在一起。值得注意的是，5个新皮质区域的距离和2个皮质下区域的距离要小于两个区域间的距离。</li>
+</ol>
+<div align="center">
+<div class="figure">
+<img src="/blog/2018-10-15-transcriptome/fig1.jpg" alt="图一 4个灵长动物8个脑区表达进化关系" style="width:80.0%;height:80.0%" />
+<p class="caption">图一 4个灵长动物8个脑区表达进化关系</p>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2>8脑区进化速度比较</h2>
+<p>  我们同样的计算方法对8个脑区分别计算了其在4个灵长动物中的表达进化距离，并构建了表达特征树。图二表示8个脑区的进化关系图。我们根据四个灵长动物的表达分化时间计算了8个脑区在6个两两物种对中的进化速度。表一列出了8个脑区进化速度的数值，图三表示8个脑区进化速度的散点图。</p>
+<p>  就进化关系而言:</p>
+<ul>
+<li>DPFC，VPFC，PMC，V1C这四个组织具有较为一致的进化关系，并与物种的进化关系一致。这种情况也发生在STR和CB这两个组织中。</li>
+<li>值得注意的是，在ACC和HIP这两个组织的表达特征树中，chimpanzee与gorilla聚集在一起，human与这两个物种分开了。而且HIP在不同的物种间具有更大的进化距离。有意思的是，相较于chimpanzee和gorilla,HIP在human中具有更短的进化枝长。</li>
+</ul>
+<p>  就进化速度而言：</p>
+<ul>
+<li>HIP的进化速度相比于其它脑区的进化速度更快</li>
+<li>CB的进化速度相比于其它的大脑区域进化速度更慢。</li>
+<li>其它的脑区（如5个新皮质区域）的进化速度处于中间状态，并且相互之间差异不大。</li>
+<li>8个脑区的进化速度的数量级均在<span class="math inline">\(10^{-9}\)</span>。</li>
+</ul>
+<div align="center">
+<div class="figure">
+<img src="/blog/2018-10-15-transcriptom/fig2.jpg" alt="图二 8个脑区表达进化关系" style="width:80.0%;height:80.0%" />
+<p class="caption">图二 8个脑区表达进化关系</p>
+</div>
+</div>
+<div align="center">
+<div class="figure">
+<img src="/blog/2018-10-15-transcriptome/table1.jpg" alt="表一 8脑区表达进化速度" style="width:100.0%;height:100.0%" />
+<p class="caption">表一 8脑区表达进化速度</p>
+</div>
+</div>
+<div align="center">
+<div class="figure">
+<img src="/blog/2018-10-15-transcriptome/fig3.jpg" alt="图三 8脑区表达进化速度" style="width:80.0%;height:80.0%" />
+<p class="caption">图三 8脑区表达进化速度</p>
+</div>
+</div>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://weibo.com/u/2267035631" class="footer-links-kudos">Weibo</a>
+          </li>
+          <li>
+            <a href="https://github.com/jingwyang/" class="footer-links-kudos">Github <img src="/images/git-logo.jpg" width="30" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.25)  11 OCT 2018 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.8.25)  11 OCT 2018 21:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**2018-10-11-W的经验贝叶斯估计.tex
-(./2018-10-11-W的经验贝叶斯估计.tex
+**2018-08-22.tex
+(./2018-08-22.tex
 LaTeX2e <2018-04-01> patch level 5
 (/Users/jingjing_yang/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -494,8 +494,8 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmargin=\skip48
 \droptitle=\skip49
 )
-No file 2018-10-11-W的经验贝叶斯估计.aux.
-\openout1 = `2018-10-11-W的经验贝叶斯估计.aux'.
+No file 2018-08-22.aux.
+\openout1 = `2018-08-22.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
@@ -573,7 +573,7 @@ LaTeX Info: Redefining \ref on input line 88.
 LaTeX Info: Redefining \pageref on input line 88.
 LaTeX Info: Redefining \nameref on input line 88.
 \@outlinefile=\write3
-\openout3 = `2018-10-11-W的经验贝叶斯估计.out'.
+\openout3 = `2018-08-22.out'.
 
 
 (/Users/jingjing_yang/Library/TinyTeX/texmf-dist/tex/latex/oberdiek/epstopdf-ba
@@ -595,7 +595,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 
-! Package inputenc Error: Unicode character 基 (U+57FA)
+! Package inputenc Error: Unicode character 傻 (U+50BB)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
@@ -605,12 +605,12 @@ Type  H <return>  for immediate help.
 l.89 \maketitle
                 
 Here is how much of TeX's memory you used:
- 9982 strings out of 494587
- 141493 string characters out of 6174677
- 208024 words of memory out of 5000000
- 13547 multiletter control sequences out of 15000+600000
+ 9968 strings out of 494587
+ 141279 string characters out of 6174677
+ 204930 words of memory out of 5000000
+ 13533 multiletter control sequences out of 15000+600000
  10408 words of font info for 17 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,1n,32p,261b,270s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,1n,32p,235b,270s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 !  ==> Fatal error occurred, no output PDF file produced!

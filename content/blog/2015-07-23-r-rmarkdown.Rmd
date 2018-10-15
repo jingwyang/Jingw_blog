@@ -2,9 +2,14 @@
 title: "Hello R Markdown"
 author: "Frida Gomam"
 date: '2015-07-23T21:13:14-05:00'
+documentclass: ctexart
 output:
-  word_document: default
-  pdf_document: default
+  rticles::ctex:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+classoption: "hyperref,"
+
 tags:
 - R Markdown
 - plot
@@ -17,7 +22,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 ```
 
 # R Markdown
-
+我是小可爱
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 You can embed an R code chunk like this:
@@ -30,7 +35,7 @@ fit
 
 # Including Plots
 
-You can also embed plots. See Figure \@ref(fig:pie) for example:![1234567](/post/2015-07-23-r-rmarkdown_files/IMG_3838.JPG)
+You can also embed plots. See Figure \@ref(fig:pie) for example:
 
 ```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
 par(mar = c(0, 1, 0, 1))
