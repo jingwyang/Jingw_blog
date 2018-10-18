@@ -105,20 +105,32 @@ Table:表三 4个灵长动物物种分化时间（Million Year）
 Table:表三 6个灵长动物物种分化时间（Million Year）
 </center>
 </br>
-<div align=center>![Kassmann数据6个组织在6个灵长动物中的进化速度](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/Kaessmann进化速度.jpg){width=100% height=100%}
+<div align=center>![图四 Kassmann数据6个组织在6个灵长动物中的进化速度](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/Kaessmann进化速度.jpg){width=100% height=100%}
 </div>
 
 ## 神经系统发育相关基因的进化模式
 &emsp;&emsp;在上文的分析中，我们探究了4个灵长动物8个脑区组织的表达进化模式。我们对27991个one-to-one orthologous genes 的表达值进行了系统发生分析，我们的结果很好的反映了这些组织整体的进化模式。
 
-&emsp;&emsp;在本小节中，我们希望探究某些具有特殊功能的基因在这8个脑区的进化趋势。为此，我们选取了DAVID数据库中与神经系统发育（Nerve System Development，简称NSD）相关的GO term，并得到240个NSD基因进行研究。同时，我们选取了3405个看家基因（HK基因）作为对照。我们分别分析了NSD基因和HK基因在8个脑区中human，chimpanzee，gorilla分别与gibbon的表达进化距离（图）。同样做为对照，我们也计算了相同的NDS基因和HK基因在Kaessmann数据的六个组织中human，chimpanzee，bonobo，gorilla，orangutan分别与macaque的表达进化距离（图）。
+&emsp;&emsp;在本小节中，我们希望探究某些具有特殊功能的基因在这8个脑区的进化趋势。为此，我们选取了DAVID数据库中与神经系统发育（Nerve System Development，简称NSD）相关的GO term，并得到240个NSD基因进行研究。同时，我们选取了3405个看家基因（HK基因）作为对照。我们分别分析了NSD基因和HK基因中human，chimpanzee，gorilla分别与gibbon在8个脑区中的表达进化距离（图五）。同样做为对照，我们也计算了相同的NDS基因和HK基因在Kaessmann数据中human，chimpanzee，bonobo，gorilla，orangutan分别与macaque在五个组织中的表达进化距离（图六）。
+
+&emsp;&emsp;在图五中，物种间在HIP中相比其它组织具有相当长的进化距离，这可能是由于Gibbon的HIP的样本特异性造成的。对此，我们排除了Gibbon，用同样的数据集重新计算了human，chimpanzee分别与gorilla之间的表达进化距离（图七）。
+
+&emsp;&emsp;在图六中，NSD基因在brain和cerebellum中的的进化距离相比其它非神经系统组织要小，这表明NSD基因主要在神经系统相关组织（brain和cerebellum）中起作用。
+
+&emsp;&emsp;我们的分析结果显示，NSD基因在神经系统相关的组织（Brian，Cerebellum）中相比HK基因具有更短的进化距离，也就是更慢的进化速度。用不同的数据集均得到了一致的结果。这提示，NSD基因作为与神经系统发育密切相关的基因，其功能可能受到了严格的负选择。
+
+&emsp;&emsp;值得注意的是，在HIP中，human与gorilla的距离相比chimpanzee与gorilla之间的距离要短得多。这表明HIP这个组织在human中具有更加缓慢的进化速度。
+在物种的进化过程中，某种新功能的获得往往伴随着表达水平的快速进化。而当新功能获得并稳定下来后，在表达上往往会受到严格的负调控。
+HIP作为与人类认知和记忆密切相关的组织，在NSD基因中显著的进化速度放缓可能提起其在功能上的重要地位。
 
 <div align=center>
-![](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/NSD-HK-Gibbon.jpg){width=80% height=80%}
+![图五 human, chimpanzee, gorilla相对gibbon在8个脑区中的表达进化距离](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/NSD-HK-Gibbon.jpg){width=80% height=80%}
 </div>
+
 <div align=center>
-![](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/Kaessmann_NSD_HK.jpg){width=80% height=80%}
+![图六 human, chimpanzee, bonobo, gorilla, orangutan相对macaque在brain,cerebellum,liver, heart, kidney中的表达分化距离](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/Kaessmann_NSD_HK.jpg){width=80% height=80%}
 </div>
+
 <div align=center>
-![](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/NSD-HK-Gorilla.jpg){width=80% height=80%}
+![图七 human, chimpanzee相对gorilla在8个脑区中的表达进化距离](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/NSD-HK-Gorilla.jpg){width=80% height=80%}
 </div>
