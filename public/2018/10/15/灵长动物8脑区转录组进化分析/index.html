@@ -85,6 +85,7 @@
 <ol style="list-style-type: decimal">
 <li>8个脑区中的7个大脑区域在4个灵长动物中分别聚集在一起。而且针对每个物种而言，5个新皮质区域（DPFC，VPFC，PMC， V1C，ACC）倾向聚集在一起，2个皮质下区域（STR，HIP）倾向聚集在一起。</li>
 <li>8个脑区中的小脑作为在形态学上与大脑相对独立的组织展现出了其独有的进化特征。就小脑这个组织而言，四个灵长动物的小脑组织在进化树中与大脑各个区域分开，单独聚在一起。</li>
+<li>Gibbon的HIP与其它物种的CB聚集在一起。一方面可能反映出Gibbon的HIP具有独特的进化方式，另一方面可能是由于采样问题而出现的误差。考虑到Gibbon的8个脑区只有一个生物学重复，我们怀疑后一种情况的可能性更大。在后续的工作中我们将尽量避免涉及到Gibbon中HIP的分析。</li>
 </ol>
 <p>  灵长动物8个脑区表达特征树的拓扑结构可反映两部分的内容：</p>
 <ol style="list-style-type: decimal">
@@ -113,6 +114,52 @@
 <li>其它的脑区（如5个新皮质区域）的进化速度处于中间状态，并且相互之间差异不大。</li>
 <li>8个脑区的进化速度的数量级均在<span class="math inline">\(10^{-9}\)</span>。</li>
 </ul>
+<center>
+<table>
+<caption>表三 4个灵长动物物种分化时间（Million Year）</caption>
+<thead>
+<tr class="header">
+<th align="center"></th>
+<th align="center">Human</th>
+<th align="center">Chimpanzee</th>
+<th align="center">Gorilla</th>
+<th align="center">Gibbon</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Human</td>
+<td align="center">0</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">Chimpanzee</td>
+<td align="center">6.4</td>
+<td align="center">0</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">Gorilla</td>
+<td align="center">8.61</td>
+<td align="center">8.61</td>
+<td align="center">0</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">Gibbon</td>
+<td align="center">19.43</td>
+<td align="center">19.43</td>
+<td align="center">19.43</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+</center>
+</br>
+</br>
 <div align="center">
 <div class="figure">
 <img src="/blog/2018-10-15-transcriptom/fig2.jpg" alt="图二 8个脑区表达进化关系" style="width:100.0%;height:100.0%" />
@@ -131,6 +178,91 @@
 <p class="caption">图三 8脑区表达进化速度</p>
 </div>
 </div>
+</div>
+<div id="kaessmann6" class="section level2">
+<h2>Kaessmann数据6个组织在灵长动物中的进化速度</h2>
+<p>  为了比较本文中灵长动物8个脑区的进化速度与其它组织在灵长动物中的进化速度，我们重新分析了Kaessmann文章中6个组织在6个灵长动物中的进化距离和进化速度。6个灵长动物分别是Human, Chimanpanzee，Bonobo，Gorilla，Orangutan和Macaque；6个组织分别是brain，cerebellum，heart，liver，kidney以及testis，其中testis在Orangutan物种中缺失。我们共得到13277个one-to-one orthologous genes。表2列出了6个灵长动物的物种分化时间；6个组织在两两物种中的进化速度散点图如图所示。从我们的结果中可以反映出:</p>
+<ul>
+<li>brain和cerebellum两个与神经系统相关的组织在所有的物种对中具有较低的物种进化速度，进化速度的数量级与本文8个脑区的进化速度也基本一致。</li>
+<li>testis的进化速度最快。
+</br>
+</br>
+<center>
+<table>
+<caption>表三 6个灵长动物物种分化时间（Million Year）</caption>
+<thead>
+<tr class="header">
+<th align="center"></th>
+<th align="center">Human</th>
+<th align="center">Chimpanzee</th>
+<th align="center">Bonobo</th>
+<th align="center">Gorilla</th>
+<th align="center">Orangutan</th>
+<th align="center">Macaque</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Human</td>
+<td align="center">0</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">Chimpanzee</td>
+<td align="center">6.4</td>
+<td align="center">0</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">Bonobo</td>
+<td align="center">6.4</td>
+<td align="center">2.37</td>
+<td align="center">0</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">Gorilla</td>
+<td align="center">8.61</td>
+<td align="center">8.61</td>
+<td align="center">8.61</td>
+<td align="center">0</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">Orangutan</td>
+<td align="center">15.2</td>
+<td align="center">15.2</td>
+<td align="center">15.2</td>
+<td align="center">15.2</td>
+<td align="center">0</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">Macaque</td>
+<td align="center">28.1</td>
+<td align="center">28.1</td>
+<td align="center">28.1</td>
+<td align="center">28.1</td>
+<td align="center">28.1</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+</center>
+</br>
+<div align="center">
+<div class="figure">
+<img src="/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/Kaessmann进化速度.jpg" alt="Kassmann数据6个组织在6个灵长动物中的进化速度" style="width:100.0%;height:100.0%" />
+<p class="caption">Kassmann数据6个组织在6个灵长动物中的进化速度</p>
+</div>
+</div></li>
+</ul>
+</div>
+<div class="section level2">
+<h2>神经系统发育相关基因的进化模式</h2>
+<p>  在上文的分析中，我们探究了4个灵长动物8个脑区组织的表达进化模式。我们对27991个one-to-one orthologous genes 的表达值进行了系统发生分析，我们的结果很好的反映了这些组织整体的进化模式。</p>
+<p>  在本小节中，我们希望探究具有特殊功能的基因在这8个脑区的进化趋势。为此，我们选取了DAVID数据库中与神经系统发育（Nerve System Development，简称NSD）相关的GO term，并得到240个基因进行研究。同时，我们选取了3405个看家基因，作为对照。</p>
 </div>
 </div>
 
