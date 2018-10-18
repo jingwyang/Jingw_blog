@@ -111,4 +111,14 @@ Table:表三 6个灵长动物物种分化时间（Million Year）
 ## 神经系统发育相关基因的进化模式
 &emsp;&emsp;在上文的分析中，我们探究了4个灵长动物8个脑区组织的表达进化模式。我们对27991个one-to-one orthologous genes 的表达值进行了系统发生分析，我们的结果很好的反映了这些组织整体的进化模式。
 
-&emsp;&emsp;在本小节中，我们希望探究具有特殊功能的基因在这8个脑区的进化趋势。为此，我们选取了DAVID数据库中与神经系统发育（Nerve System Development，简称NSD）相关的GO term，并得到240个基因进行研究。同时，我们选取了3405个看家基因，作为对照。
+&emsp;&emsp;在本小节中，我们希望探究某些具有特殊功能的基因在这8个脑区的进化趋势。为此，我们选取了DAVID数据库中与神经系统发育（Nerve System Development，简称NSD）相关的GO term，并得到240个NSD基因进行研究。同时，我们选取了3405个看家基因（HK基因）作为对照。我们分别分析了NSD基因和HK基因在8个脑区中human，chimpanzee，gorilla分别与gibbon的表达进化距离（图）。同样做为对照，我们也计算了相同的NDS基因和HK基因在Kaessmann数据的六个组织中human，chimpanzee，bonobo，gorilla，orangutan分别与macaque的表达进化距离（图）。
+
+<div align=center>
+![](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/NSD-HK-Gibbon.jpg){width=80% height=80%}
+</div>
+<div align=center>
+![](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/Kaessmann_NSD_HK.jpg){width=80% height=80%}
+</div>
+<div align=center>
+![](/blog/2018-10-15-灵长动物8脑区转录组进化分析_files/NSD-HK-Gorilla.jpg){width=80% height=80%}
+</div>
