@@ -1,5 +1,5 @@
 ---
-title: "傻大宝与小可爱"
+title: "啦啦啦"
 author: "Jingwen Yang"
 date: '2018-08-22'
 output: pdf_document
@@ -8,9 +8,6 @@ tags: []
 categories: []
 ---
 
-我超级爱我的傻大宝
-2018.09.02
-我觉得我不漂亮了，黑瘦黑瘦的，皮肤也不好。
 $\sigma^2$
 $$x-y$$
 $\sqrt{x^2+\sqrt{y}}$
