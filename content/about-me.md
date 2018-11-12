@@ -8,7 +8,7 @@ tags: []
 ---
 -----
 # <center>我是谁</center >
-&emsp;&emsp;古灵精怪小可爱一枚 :cherry_blossom:。</br>
+&emsp;&emsp;小可爱一枚 :cherry_blossom:。</br>
 &emsp;&emsp;我现在在魔都东南某高校江湾大草原搬砖 :computer:。关于我的属性，可以概括但不局限于下：
 
 - 我超级凶，会咬人，一点都不好惹 :imp:。</br>
