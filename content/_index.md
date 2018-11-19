@@ -6,6 +6,5 @@ slug: homepage
 categories: []
 tags: []
 ---
-&emsp;&emsp;我叫**小可爱**，喜欢······</br>
-&emsp;&emsp;heng     我不告诉你。</br>
-&emsp;&emsp;未完···</br>
+&emsp;&emsp;我是**小可爱**，喜欢······</br>
+&emsp;&emsp;heng     才不告诉你。</br>
