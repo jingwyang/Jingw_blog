@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2018/12/24/%E6%9C%89%E7%82%B9%E4%B8%8D%E5%BC%80%E5%BF%83/</loc>
+    <lastmod>2018-12-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2018/11/19/%E6%88%91%E5%BF%83%E7%9B%AE%E4%B8%AD%E5%AE%8C%E7%BE%8E%E7%9A%84%E4%B8%80%E5%A4%A9/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
   </url>
@@ -139,7 +144,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
